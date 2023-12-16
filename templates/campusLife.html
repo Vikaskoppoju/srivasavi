@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sri Vasavi Engineering College | Campus Life</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#header").load("./header.html");
+        $("#footer").load("./footer.html");
+      });
+    </script>
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- testimonials externals ends here -->
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #fff;
+        color: red;
+      }
+
+      .features {
+        padding: 50px 12%;
+        font-size: 22px;
+      }
+
+      .rowContainer {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        margin-bottom: 50px;
+      }
+
+      .textcol {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+      }
+
+      .textcol h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        font-weight: 900;
+      }
+
+      .imgcol {
+        flex-basis: 50%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .imgcol img {
+        display: block;
+        width: 90%;
+        margin: auto;
+      }
+
+      .mainSection {
+        max-width: 100vw;
+        display: flex;
+        flex-direction: rowContainer-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .profile-img-container {
+        border-radius: 5px;
+        box-shadow: 0px 0px;
+        max-width: 50vw;
+      }
+
+      .text-container {
+        font-size: 90px;
+      }
+
+      .button-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-top: 20px;
+      }
+
+      #a-button {
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #b1040e;
+        color: white;
+        font-size: 15px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .textcol,
+        .imgcol {
+          flex-basis: 100%;
+        }
+
+        .features h2 {
+          font-size: 30px;
+        }
+
+        .features p {
+          font-size: 18px;
+        }
+
+        .rowContainer:nth-child(1),
+        .rowContainer:nth-child(3) {
+          flex-direction: column-reverse;
+        }
+
+        .features .rowContainer {
+          padding: 10px 0;
+        }
+
+        .text-container {
+          font-size: 50px;
+        }
+
+        .mainSection {
+          flex-direction: column-reverse;
+        }
+
+        .profile-img-container {
+          display: none;
+        }
+
+        .profile-img {
+          display: none;
+        }
+
+        .button-container {
+          justify-content: center;
+        }
+
+        #a-button {
+          width: 100%;
+          text-align: center;
+          padding: 5px;
+        }
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <!--Remaining section-->
+
+    <section style="margin-top: 130px">
+      <div class="container d-flex mainSection">
+        <div class="text-container">
+          <p
+            style="
+              font-stretch: expanded;
+              font-stretch: expanded;
+              background: url(../images/campusLife/adventure.jpg);
+              background-size: cover;
+              background-position: center; /* Adjust as needed */
+              background-repeat: no-repeat;
+              display: inline-block;
+              font-weight: bolder;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            Connect <br />Collaborate <br />Create
+          </p>
+        </div>
+        <div class="profile-img-container">
+          <img
+            class="profile-img"
+            src="../images/campusLife/art.jpg"
+            height="100%"
+            width="100%"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="campus">
+      <div class="features">
+        <div class="rowContainer" id>
+          <div class="textcol">
+            <h2>Student Clubs</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ullam illo error quibusdam minus!
+            </p>
+            <div class="button-container">
+              <a href="./club.html" id="a-button">Know More ></a>
+            </div>
+          </div>
+          <div class="imgcol">
+            <img src="../images/campusLife/clubs.jpg" />
+          </div>
+        </div>
+        <div class="rowContainer">
+          <div class="imgcol">
+            <img src="../images/campusLife/sports.jpg" />
+          </div>
+          <div class="textcol">
+            <h2>Physical Fitness & Wellness</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ullam illo error quibusdam minus!
+            </p>
+            <div class="button-container">
+              <a href="./sports.html" id="a-button">Know More ></a>
+            </div>
+          </div>
+        </div>
+        <div class="rowContainer">
+          <div class="textcol">
+            <h2>Library</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ullam illo error quibusdam minus!
+            </p>
+          </div>
+          <div class="imgcol">
+            <img src="../images/campusLife/library.jpg" />
+          </div>
+        </div>
+        <div class="rowContainer">
+          <div class="imgcol">
+            <img src="../images/campusLife/hostel.jpg" />
+          </div>
+          <div class="textcol">
+            <h2>Residential</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ullam illo error quibusdam minus!
+            </p>
+            <div class="button-container">
+              <a href="./hostel.html" id="a-button">Know More ></a>
+            </div>
+          </div>
+        </div>
+        <div class="rowContainer">
+          <div class="textcol">
+            <h2>Cafeteria</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              ullam illo error quibusdam minus!
+            </p>
+          </div>
+          <div class="imgcol">
+            <img src="../images/campusLife/canteen.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+
+    <!-- <script src="index.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/b2b9ab5ba1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

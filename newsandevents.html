@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Site</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add custom styles for ribbon */
+        .ribbon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 22px;
+            font-weight: 700;
+            background-color: #b1040e;
+            color: #fff;
+            padding: 5px 10px;
+            z-index: 1;
+        }
+
+        .ribbon::before {
+            content: '';
+            position: absolute;
+            top: 68%;
+            
+            left: 0px;
+            border: solid transparent;
+            border-width: 14px;
+            border-top-color: #b1040e;
+            transform: translateX(-50%) rotate(-270deg);
+        }
+        .button-color{
+            background-color: #b1040e;
+            color: white;
+        }
+        .button-div{
+            text-align: right;
+        }
+        .card{
+            border-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 position-relative pt-3 shadow ">
+            <!-- Ribbon for Card 1 -->
+            <div class="ribbon ">News</div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title mt-5">News Headline 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac justo nec dui sodales blandit eget non neque. Sed id sem in libero consectetur ultricies. Nullam euismod vel risus in tincidunt.</p>
+                    <div class="button-div">
+                        <a href="#" class="btn button-color">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 position-relative pt-3 shadow ">
+            <!-- Ribbon for Card 2 -->
+            <div class="ribbon ">Results</div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title mt-5 ">News Headline 2</h5>
+                    <p class="card-text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vestibulum sem et quam cursus, non gravida metus tincidunt.</p>
+                    <div class="button-div">
+                        <a href="#" class="btn read-more button-color">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

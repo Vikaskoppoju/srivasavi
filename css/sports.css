@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    background: #eee;
+    user-select: none;
+    font-family: sans-serif;
+  }
+
+  #slider {
+    position: relative;
+    width: 50%;
+    height: 32vw;
+    margin: 150px auto;
+    font-family: "Helvetica Neue", sans-serif;
+    perspective: 1400px;
+    transform-style: preserve-3d;
+  }
+
+  input[type="radio"] {
+    position: relative;
+    top: 108%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+    margin: 0 15px 0 0;
+    opacity: 0.4;
+    transform: translateX(-83px);
+    cursor: pointer;
+  }
+
+  input[type="radio"]:nth-child(5) {
+    margin-right: 0px;
+  }
+
+  input[type="radio"]:checked {
+    opacity: 1;
+  }
+
+  #slider label,
+  #slider label img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 400ms ease;
+  }
+
+  /* Slider Functionality */
+  /* Active Slide */
+  #s1:checked ~ #slide1,
+  #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3,
+  #s4:checked ~ #slide4,
+  #s5:checked ~ #slide5 {
+    box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3),
+      0 12px 6px rgba(0, 0, 0, 0.2);
+    transform: translate3d(0%, 0, 0px);
+  }
+
+  /* Next Slide */
+  #s1:checked ~ #slide2,
+  #s2:checked ~ #slide3,
+  #s3:checked ~ #slide4,
+  #s4:checked ~ #slide5,
+  #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translate3d(20%, 0, -100px);
+  }
+
+  /* Next to Next Slide */
+  #s1:checked ~ #slide3,
+  #s2:checked ~ #slide4,
+  #s3:checked ~ #slide5,
+  #s4:checked ~ #slide1,
+  #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    transform: translate3d(40%, 0, -250px);
+  }
+
+  /* Previous to Previous Slide */
+  #s1:checked ~ #slide4,
+  #s2:checked ~ #slide5,
+  #s3:checked ~ #slide1,
+  #s4:checked ~ #slide2,
+  #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    transform: translate3d(-40%, 0, -250px);
+  }
+
+  /* Previous Slide */
+  #s1:checked ~ #slide5,
+  #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2,
+  #s4:checked ~ #slide3,
+  #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translate3d(-20%, 0, -100px);
+  }
+  .card:hover {
+    color: white;
+    background-color: red;
+    box-shadow: 5px 0px 10px grey;
+  }
+
+  /* Gallery CSS */
+  .gallery {
+    max-width: 80vw;
+    background-color: #7f7b82;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .row1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+  .row1-col1 {
+    width: 40%;
+  }
+  .row1-col2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .row1-col2-inner {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+  .row2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row3 {
+    width: 100%;
+    display: flex;
+    gap: 2px;
+  }
+  .row3-col1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .row3-col2 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row3-col3 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .row1 img,
+  .row1-col1 img,
+  .row1-col2 img,
+  .row1-col2-inner img,
+  .row2 img,
+  .row3-col1 img,
+  .row3-col2 img,
+  .row3-col3 img {
+    height: 100%;
+    width: 100%;
+  }
+  .trainers-cards {
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+    margin: 10px;
+  }
+  .trainer-card {
+    width: 25vw;
+  }
+  @media screen and (max-width: 700px) {
+    .trainer-card {
+      width: 80vw;
+    }
+  }
+  @media screen and (max-width: 350px) {
+    input[type="radio"] {
+      width: 15px;
+      height: 15px;
+    }
+  }

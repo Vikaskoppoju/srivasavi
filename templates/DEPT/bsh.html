@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="en" class="mt-3">
+
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Deprtment</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../../css/departments/bshstyle.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="../../css/departments/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="../../css/departments/animate.css">
+		<link rel="stylesheet" href="../../css/departments/style.css">
+		<link rel="stylesheet" href="../../css/departments/media-queries.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--dept profile link tag-->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<!-- Optional: jQuery (required for some Bootstrap components) -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- Optional: Popper.js (required for some Bootstrap components) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+	<script> 
+		$(function(){
+		  $("#header").load("./header.html"); 
+		  $("#footer").load("./footer.html"); 
+		});
+		</script>
+</head>
+
+<body>
+    <div id="header"></div>
+	<!-- Wrapper -->
+	<div class="wrapper">
+
+		<!-- Sidebar -->
+		<nav class="sidebar side">
+
+			<!-- close sidebar menu -->
+			<div class="dismiss">
+				<i class="fas fa-arrow-left"></i>
+			</div>
+
+			<div class="">
+
+				<h3 class="ml-3"
+					style="font-size: 30px;font-weight: 700;color: #fff;letter-spacing: 1px;font-family: 'Poppins', Arial, Helvetica, sans-serif;padding-top:50px !important;">
+					Departments<a href="index.html"></a>
+				</h3>
+
+			</div>
+
+
+			<ul class="list-unstyled components mb-5">
+				<li class="active">
+					<a onclick="
+						location.reload();
+						" data-toggle="tab">Department Profile</a>
+				</li>
+				<li>
+					<a href="#tab2" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Faculty
+						Profiles</a>
+				</li>
+				<li>
+					<a href="#tab3" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Board of
+						Studies</a>
+				</li>
+
+				<li>
+					<a href="#tab8" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">Laboratories</a>
+				</li>
+
+				<li>
+					<a href="#tab10" onclick="window.scrollTo({top:0,behavior:'smooth'});return false" data-toggle="tab">Faculty
+						Achievements</a>
+				</li>
+				<li>
+					<a href="#tab11" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">Activities
+					</a>
+				</li>
+
+				<li>
+					<a href="#tab21" onclick="window.scrollTo({top:0,behavior:'smooth'});return false"
+						data-toggle="tab">Contact</a>
+				</li>
+			</ul>
+
+
+
+
+
+		</nav>
+		<!-- End sidebar -->
+
+		<!-- Dark overlay -->
+		<div class="overlay"></div>
+
+
+
+
+
+		<div class="tab-pane" id="tab2">
+
+			<div class="container mt-4">
+
+				<h2 class="mt-8" style="margin-bottom: 30px; color: #850209;">Profile Page</h2>
+				<!-- Profile selection buttons -->
+				<div class=" nav-content mb-5">
+					<details open>
+						<summary>Faculty Profile</summary>
+						<!-- Faculty Profile Table (Initially hidden) -->
+						<div class=" tab4-table" style="display: flex;justify-content: center; align-items: center;">
+							<table
+								class="table table-bordered faculty-table mb-4 table-responsive table-hover table-striped table-hover table-striped"
+								id="faculty-profile" class="tab4-table">
+								<thead>
+									<tr class="tab4-tr" style="
+										color: #343a40 !important;">
+										<th class="tab4-th">S.No.</th>
+										<th class="tab4-th">Name of the Faculty</th>
+										<th class="tab4-th">Qualification</th>
+										<th class="tab4-th">Designation</th>
+										<th class="tab4-th">Profile</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="text-center text-light bg-dark" colspan="5">Mathematics</td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">1</td>
+										<td class="tab4-td">Mr.N.Rajasekhar</td>
+										<td class="tab4-td">M.Sc.M.Phil</td>
+										<td class="tab4-td">Assoc.Professor&HOD</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/bsh_N.Rajasekhar_webprofile.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">2</td>
+										<td class="tab4-td">Mr.Sk.Dhana Prasad</td>
+										<td class="tab4-td">M.Sc,B.Ed</td>
+										<td class="tab4-td">Asst. Professor &section Head</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/Sk.Dhana%20PrasadSk.Dhana%20Prasad.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">3</td>
+										<td class="tab4-td">Mrs. B.Adi Lakshmi</td>
+										<td class="tab4-td">M.Sc.,B.Ed</td>
+										<td class="tab4-td">Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/B.Adi%20LakshmiAdi%20Lakshmi%20(Maths).pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">4</td>
+										<td class="tab4-td">Mrs. G.S.Prasanthi</td>
+										<td class="tab4-td">M.Sc.,(Ph.D)</td>
+										<td class="tab4-td">Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/G.PrasanthiG.S.Prasanthi.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">5</td>
+										<td class="tab4-td">Mr. V.Srinivas</td>
+										<td class="tab4-td">M.Sc</td>
+										<td class="tab4-td">Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/BSH_Mr.%20V.%20Srinivas.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">6</td>
+										<td class="tab4-td">Mrs. B.V.D.Santhi lakshmi</td>
+										<td class="tab4-td">M.Sc.,B.Ed.,M.Phil,(Ph.D)</td>
+										<td class="tab4-td">Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/B.V.D.%20Santhi%20Lakshmisanthi(Maths).pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">7</td>
+										<td class="tab4-td">Ms. S. Sirisha</td>
+										<td class="tab4-td">M.Sc.</td>
+										<td class="tab4-td">Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/BSH_Ms.%20S.%20Sirisha.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">8</td>
+										<td class="tab4-td">Ms. T. Satya Surya Praba</td>
+										<td class="tab4-td">M.Sc.</td>
+										<td class="tab4-td">Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/BSH_Ms.%20T.Satya%20Surya%20Prabha.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">9</td>
+										<td class="tab4-td">Mr. T.D.Rama Krishna</td>
+										<td class="tab4-td">M.Sc.</td>
+										<td class="tab4-td">Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/BSH_Mr.%20T.%20D%20Rama%20Krishna.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">10</td>
+										<td class="tab4-td">Mr. S. Veeresh</td>
+										<td class="tab4-td">M.Sc.,B.Ed</td>
+										<td class="tab4-td">Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/BSH_Mr.%20S.%20Veeresh.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">11</td>
+										<td class="tab4-td">Mr. M. Satya Suresh</td>
+										<td class="tab4-td">M.Sc.,B.Ed</td>
+										<td class="tab4-td">Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/BSH_Mr.%20M.%20Satya%20Suresh.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">12</td>
+										<td class="tab4-td">Ms. P. Sravani</td>
+										<td class="tab4-td">M.Sc.,B.Ed</td>
+										<td class="tab4-td">Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link" href="">View Profile</a></td>
+									</tr>
+									<tr>
+										<td class="text-center text-light bg-dark" colspan="5">English</td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">13</td>
+										<td class="tab4-td">Dr.T.Sujani</td>
+										<td class="tab4-td">M.A.,M.Phil.,Ph.D</td>
+										<td class="tab4-td">Assoc. Professor & Section Head</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/BSH_Dr.%20T.SujaniSujani%20Tata.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">14</td>
+										<td class="tab4-td">Dr.K. Venkata Rao</td>
+										<td class="tab4-td">M.A.,B.Ed.,M.Phil.,Ph.D</td>
+										<td class="tab4-td">Assoc. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://srivasaviengg.ac.in/faculty_profile/BSH_Dr.K.%20Venkata%20Rao.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">15</td>
+										<td class="tab4-td">Dr.B.Anada Rao</td>
+										<td class="tab4-td">M.A.,M.Phil.,Ph.D</td>
+										<td class="tab4-td">Sr.Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href=http://www.srivasaviengg.ac.in/faculty_profile/BSH_Dr.%20B.%20Ananda%20Rao.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">16</td>
+										<td class="tab4-td">Mr. K.V.Rama Rao</td>
+										<td class="tab4-td">M.A.,B.Ed.,(Ph.D)</td>
+										<td class="tab4-td">Sr.Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Mr.K%20V%20Rama%20Rao.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">17</td>
+										<td class="tab4-td">Mrs. K. Radha Madhavi</td>
+										<td class="tab4-td">M.A.,B.Ed.,M.Phil</td>
+										<td class="tab4-td">Sr.Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href=http://www.srivasaviengg.ac.in/faculty_profile/BSH_Mrs.%20K.Radha%20Madhavi.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">18</td>
+										<td class="tab4-td">Mrs. Ch. Tanuja</td>
+										<td class="tab4-td">M.A., M.Phil.,B.Ed.</td>
+										<td class="tab4-td">Sr.Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Ms.Ch.%20Tanuja.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">19</td>
+										<td class="tab4-td">Mrs. U. Aparanjani</td>
+										<td class="tab4-td">M.A.,B.Ed.,(Ph.D)</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-tdhttp://www.srivasaviengg.ac.in/faculty_profile/BSH_Mrs.Aparanjani.pdf">View
+											Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">20</td>
+										<td class="tab4-td">Mr. G. Srinivas Rao</td>
+										<td class="tab4-td">M.A.</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Mr.%20G.%20Srinivasa%20Rao.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">21</td>
+										<td class="tab4-td">Mr. M. Venkata Ramana</td>
+										<td class="tab4-td">M.A., B.Ed.,(Ph.D)</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Mr.%20M.%20Venkata%20Ramana.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">22</td>
+										<td class="tab4-td">Ms. A.Kiranmayee</td>
+										<td class="tab4-td">M.A.</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Ms.%20A.Kiranmayee.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">23</td>
+										<td class="tab4-td">Ms. P.V.Padmavathi</td>
+										<td class="tab4-td">M.A.,B.Ed,</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Ms.%20P.V.Padmavathi.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">24</td>
+										<td class="tab4-td">Mrs. Ch. Manjeera</td>
+										<td class="tab4-td">M.A.</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Mrs.%20Ch.%20Manjeera.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">25</td>
+										<td class="tab4-td">Mr. Ch. Mutyala Rao</td>
+										<td class="tab4-td">M.A., B.Ed</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Mr.%20Ch.%20Mutyala%20Rao.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">26</td>
+										<td class="tab4-td">Mr. G. Chandu</td>
+										<td class="tab4-td">M.A., B.Ed</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Mr.G.%20Chandu.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">27</td>
+										<td class="tab4-td">Mr. J. N.V.Somayajulu</td>
+										<td class="tab4-td">M.Sc.</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link" href="http://srivasaviengg.ac.in/faculty_profile/">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">28</td>
+										<td class="tab4-td">Mr. T. Hema Satya Srinivas</td>
+										<td class="tab4-td">M.Sc</td>
+										<td class="tab4-td">Aptitude Trainer </td>
+										<td class="tab4-td"><a class="profile-link" href="#">View Profile</a></td>
+									</tr>
+									<tr>
+										<td class="text-center text-light bg-dark" colspan="5">Physics</td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">29</td>
+										<td class="tab4-td">Mr. P. Sita Rama Raju</td>
+										<td class="tab4-td">M.Sc.,M.Phil.,(Ph.D)</td>
+										<td class="tab4-td">Assoc. Professor & Section Head </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/P.Sita%20Rama%20RajuPSR%20Raju%20Profile.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">30</td>
+										<td class="tab4-td">Dr. K. Jagadeesh</td>
+										<td class="tab4-td">M.Sc.,Ph.D</td>
+										<td class="tab4-td">Sr.Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Dr.K.Jagadeesh.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">31</td>
+										<td class="tab4-td">Mr. B. Sasi Bhushan</td>
+										<td class="tab4-td">M.Sc.,M.tech</td>
+										<td class="tab4-td">Sr.Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/Sasi%20Bhushan%20BhimavarapuSasi%20Bhushan%20Bhimavarapu.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">32</td>
+										<td class="tab4-td">Mrs. G.Ramadevi</td>
+										<td class="tab4-td">M.Sc.</td>
+										<td class="tab4-td">Sr.Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/GAJULA%20RAMADEVI.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">33</td>
+										<td class="tab4-td">Mr. P. Naga Ramesh</td>
+										<td class="tab4-td">M.Sc.,B.Ed</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Mr.%20P%20Naga%20Ramesh.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">34</td>
+										<td class="tab4-td">Mrs. B. Sudha</td>
+										<td class="tab4-td">M.Sc.</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Mrs.%20B.%20Sudha.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">35</td>
+										<td class="tab4-td">Mr. P. Vinay</td>
+										<td class="tab4-td">M.Sc.,B.Ed</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Mr.%20P%20%20Vinay.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr>
+										<td class="text-center text-light bg-dark" colspan="5">Chemistry</td>
+									</tr>
+									<tr class="tab4-tr">
+
+										<td class="tab4-td">36</td>
+										<td class="tab4-td">Mrs. S.S.V.Suma Latha</td>
+										<td class="tab4-td">M.Sc.,B.Ed.,(Ph.D)</td>
+										<td class="tab4-td">Asst. Professor & Section head </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/S.S.V.Suma%20Lathassvsuma%20Latha.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">37</td>
+										<td class="tab4-td">Mr. J. Chandara Rao</td>
+										<td class="tab4-td">M.Sc.,M.Phil.</td>
+										<td class="tab4-td">Sr.Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/J.Chandara%20Raochandara%20rao%20resume.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">38</td>
+										<td class="tab4-td">Mrs. P. Durga Devi</td>
+										<td class="tab4-td">M.Sc.</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/P.Durga%20DeviDurga%20devi.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">39</td>
+										<td class="tab4-td">Ms. A. Anusha</td>
+										<td class="tab4-td">M.Sc.</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Ms.A.Anusha.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">40</td>
+										<td class="tab4-td">Ms. S. Lavanya</td>
+										<td class="tab4-td">M.Sc.</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Ms.S.Lavanya.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">41</td>
+										<td class="tab4-td">Mrs. P. Silpa</td>
+										<td class="tab4-td">M.Sc.</td>
+										<td class="tab4-td">Asst. Professor</td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Mrs.%20P.Silpa.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">42</td>
+										<td class="tab4-td">Ms. Md. Syed Yasmin</td>
+										<td class="tab4-td">M.Sc.</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Ms.Md.%20Syed%20Yasmin.pdf">View
+												Profile</a></td>
+									</tr>
+									<tr class="tab4-tr">
+										<td class="tab4-td">43</td>
+										<td class="tab4-td">Dr. B. Rama Krishna</td>
+										<td class="tab4-td">M.Sc.,Ph.D</td>
+										<td class="tab4-td">Asst. Professor </td>
+										<td class="tab4-td"><a class="profile-link"
+												href="http://www.srivasaviengg.ac.in/faculty_profile/BSH_Dr.%20B.%20Rama%20Krishna.pdf">View
+												Profile</a></td>
+									</tr>
+
+									<!-- Add more faculty profile rows as needed -->
+								</tbody>
+							</table>
+						</div>
+					</details>
+					<!-- Course Information Table (Initially hidden) -->
+					<details>
+						<summary>Non-Teaching Profiles</summary>
+						<div class=" tab4-table mb-4 " id="non-teaching">
+							<table
+								class="mx-auto table course-table table-responsive table-hover table-striped table-hover table-striped table-bordered">
+								<thead>
+									<tr>
+										<th>S.No</th>
+										<th>Name of the Faculty</th>
+										<th>Designation</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>T.Sushma</td>
+										<td>Physics Lab Technician</td>
+
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>V.sekhar Babu</td>
+										<td>Chemistry Lab Technician</td>
+
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>P.Peda Venkata Rao</td>
+										<td>Chemistry Lab Technician</td>
+
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>P.Sujatha Rani</td>
+										<td>DEO</td>
+
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>A.V.V.Naga Lakshmi</td>
+										<td>DEO</td>
+
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>Mrs. L. Gouthami</td>
+										<td>DEO</td>
+
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>G. Srinivas Rao</td>
+										<td>Attender</td>
+
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>Ch.Nageswara Rao</td>
+										<td>Attender</td>
+
+									</tr>
+									<!-- Add more course information rows as needed -->
+								</tbody>
+							</table>
+						</div>
+					</details>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab-pane " id="tab3">
+			<div class="container mt-4">
+				<h2 style="color:#850209; margin-bottom: 18px;">Board of Studies</h2>
+
+				<div class="mt-4">
+					<div class=" nav-content mb-5">
+						<details open>
+							<summary>English BOS Meetings</summary>
+							<ul class="list-unstyled px-3" style="margin-top: 20px;">
+
+								<li>Minutes of 5th meeting of the Board of Studies, dated 20.09.2021 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/BOS-5%20English.pdf" id="pdfDOWNLOADER11">View</a>
+								</li>
+								<li>Minutes of 4th meeting of the Board of Studies, dated 31.12.2020 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/BOS-4%20English.pdf" id="pdfDOWNLOADER11">View</a>
+								</li>
+								<li>Minutes of 3rd meeting of the Board of Studies, dated 01.08.2020 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/BOS-3%20English.pdf" id="pdfDOWNLOADER11">View</a>
+								</li>
+								<li>Minutes of 2nd meeting of the Board of Studies, dated 19.04.2019 - <a
+										href="http://srivasaviengg.ac.in/uploads/bsh/BOS-2%20English.pdf" id="pdfDOWNLOADER11">View</a></li>
+								<li>Minutes of 1st meeting of the Board of Studies, dated 02.06.2018 - <a
+										href="http://srivasaviengg.ac.in/uploads/bsh/BOS-1%20English.pdf" id="pdfDOWNLOADER11">View</a></li>
+							</ul>
+						</details>
+
+					</div>
+				</div>
+
+				<div class="mt-4">
+					<div class=" nav-content mb-5">
+						<details>
+							<summary>Mathematics BOS Meetings
+							</summary>
+							<ul class="list-unstyled px-3" style="margin-top: 20px;">
+
+								<li>Minutes of 5th meeting of the Board of Studies, dated 27.09.2021 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/BOS-%205%20Maths.pdf" id="pdfDOWNLOADER11">View</a>
+								</li>
+								<li>Minutes of 4th meeting of the Board of Studies, dated 31.12.2020 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/BOS-4%20Maths.pdf" id="pdfDOWNLOADER11">View</a>
+								</li>
+								<li>Minutes of 3rd meeting of the Board of Studies, dated 01.08.2020 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/BOS-3%20Maths.pdf" id="pdfDOWNLOADER11">View</a>
+								</li>
+								<li>Minutes of 2nd meeting of the Board of Studies, dated 13.04.2019 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/BOS%202-Maths.pdf" id="pdfDOWNLOADER11">View</a>
+								</li>
+								<li>Minutes of 1st meeting of the Board of Studies, dated 12.06.2018 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/BOS%201%20Maths.pdf" id="pdfDOWNLOADER11">View</a>
+								</li>
+							</ul>
+						</details>
+
+					</div>
+				</div>
+
+
+				<div class="mt-4">
+					<div class=" nav-content mb-5">
+						<details>
+							<summary>Chemistry BOS Meetings</summary>
+							<ol class="list-unstyled px-3" style="margin-top: 20px;">
+
+								<li>Minutes of 2nd meeting of the Board of Studies, dated 28.12.2020 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/Physics%20BOS-II.pdf" id="pdfDOWNLOADER11">View</a>
+								</li>
+								<li>Minutes of 1st meeting of the Board of Studies, dated 02.06.2018 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/Physics%20BOS-1.pdf" id="pdfDOWNLOADER11">View</a>
+								</li>
+							</ol>
+						</details>
+
+					</div>
+				</div>
+
+
+				<div class="mt-4">
+					<div class=" nav-content mb-5">
+						<details>
+							<summary>Physics BOS Meetings</summary>
+							<ul class="list-unstyled px-3" style="margin-top: 20px;">
+
+								<li>Minutes of 2nd meeting of the Board of Studies, dated 28.12.2020 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/Chemistry%20BOS%20Meeting-2.pdf"
+										id="pdfDOWNLOADER11">View</a></li>
+								<li>Minutes of 1st meeting of the Board of Studies, dated 02.06.2018 - <a
+										href="http://www.srivasaviengg.ac.in/uploads/bsh/Chemistry%20BOS%20Meeting-1.pdf"
+										id="pdfDOWNLOADER11">View</a></li>
+							</ul>
+						</details>
+
+					</div>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+		<div class="tab-pane" id="tab8">
+			<h2 class="text-center my-5 mt-0" style="color: #850209;">Laboratories</h2>
+
+			<div class="mt-4 m-2">
+				<details open>
+					<summary>Laboratories</summary>
+					<div>
+						<ul class="list-unstyled ml-3" style="margin-top: 20px">
+							<li>
+								1) English Communication Skills Lab
+							</li>
+							<li>
+								2) Engineering Physics Lab
+							</li>
+							<li>
+								3) Engineering Chemistry Lab
+							</li>
+							<li>
+								4) Virtual Lab
+							</li>
+
+						</ul>
+					</div>
+				</details>
+			</div>
+		</div>
+
+		<div class="tab-pane" id="tab10">
+			<h2 class="text-center my-5" style="color: #850209;">Faculty Achievements</h2>
+			<div class="mt-4">
+				<details open>
+					<summary>Paper Publications</summary>
+					<div>
+						<ul class="list-unstyled ml-3" style="margin-top: 20px">
+							<li>
+								Faculty Publication Details - <a
+									href="http://www.srivasaviengg.ac.in/uploads/bsh/Paper%20Publications.pdf" id="pdfDOWNLOADER11">For
+									more
+									Details</a>
+							</li>
+
+						</ul>
+					</div>
+				</details>
+			</div>
+			<div class="mt-4 ">
+				<details>
+					<summary>Book Publications</summary>
+					<div>
+						<ul class="list-unstyled ml-3" style="margin-top: 20px">
+							<li>
+								Book Publication Details - <a href="http://www.srivasaviengg.ac.in/uploads/bsh/Book%20Publication.pdf"
+									id="pdfDOWNLOADER11">For more Details</a>
+							</li>
+
+						</ul>
+					</div>
+				</details>
+			</div>
+			<div class="mt-4">
+				<details>
+					<summary>Online Certifications</summary>
+					<div>
+						<ul class="list-unstyled ml-3" style="margin-top: 20px">
+							<li>
+								Online Certification Details - <a
+									href="http://www.srivasaviengg.ac.in/uploads/bsh/Online%20Certifications.pdf" id="pdfDOWNLOADER11">For
+									more Details</a>
+							</li>
+
+						</ul>
+					</div>
+				</details>
+			</div>
+
+		</div>
+
+		<div class="tab-pane" id="tab11">
+			<h2 class="text-center my-5" style="color: #850209;">Activities</h2>
+			<details open>
+				<summary>National Mathematics Day</summary>
+				<ul class="list-unstyled ml-3" style="margin-top: 20px">
+					<li>
+						National Mathematics Day 2022 - <a
+							href="http://srivasaviengg.ac.in/uploads/bsh/National%20Mathematics%20Day%20-%202022.pdf"
+							id="pdfDOWNLOADER11">View</a>
+					</li>
+					<li>
+						National Mathematics Day 2015 - <a
+							href="http://srivasaviengg.ac.in/uploads/bsh/National%20Mathematics%20Day%20-%202015.pdf"
+							id="pdfDOWNLOADER11">View</a>
+					</li>
+					<li>
+						National Mathematics Day 2014 - <a
+							href="http://srivasaviengg.ac.in/uploads/bsh/National%20Mathematics%20Day%20-%202014.pdf"
+							id="pdfDOWNLOADER11">View</a>
+					</li>
+					<li>
+						National Mathematics Day 2012 - <a
+							href="http://srivasaviengg.ac.in/uploads/bsh/National%20Mathematics%20Day%20-%202012.pdf"
+							id="pdfDOWNLOADER11">View</a>
+					</li>
+
+				</ul>
+
+			</details>
+			<details>
+				<summary>Fly High Program</summary>
+				<ul class="list-unstyled ml-3" style="margin-top: 20px">
+
+					<li>Fly High Details -<a href="http://srivasaviengg.ac.in/uploads/bsh/Fly High Details.pdf" target="_blank"
+							id="pdfDOWNLOADER11">View</a></li>
+
+				</ul>
+
+			</details>
+			<details>
+				<summary>World Environment Day</summary>
+				<ul class="list-unstyled ml-3" style="margin-top: 20px">
+
+					<li>World Environment Day 2015 - <a
+							href="http://srivasaviengg.ac.in/uploads/bsh/WORLD%20ENVIRONMENT%20DAY-%202015.pdf"
+							id="pdfDOWNLOADER11">View</a>
+					</li>
+
+				</ul>
+			</details>
+		</div>
+		<!----------------------------------------------TAB21 STARTS ---------------->
+
+		<div class="tab-pane active" id="tab21">
+			<h1 style="color:#850209;text-align:center;margin-top: 80px;">
+				Contact-Info
+			</h1>
+			<div class="container tab-content border-1 my-5 p-3">
+
+				<div class="row">
+					<div class="col-md-6">
+						<img class="img-fluid dept-hod" src="../../images/departments/bsh/bshhod (1).jpg" height="160"
+							style="border: 0px solid #3c7593" />
+					</div>
+					<div class="col-md-6 text-center" id="hod" class="my-3 my-md-0">
+						<h2 id="dept-head" class="mt-4 mt-md-auto">Sri N. Raja Sekhar</h2>
+						<p>Professor & Head of the Department</p>
+						<p>Mobile No: 9885739808</p>
+						<p>Phone No: 08818-284355(O)-(Ext.-377)</p>
+						<p>Fax No: 08818-284322</p>
+						<p>Email: <a href="mailto:hod_bsh@srivasaviengg.ac.in" style="color: #850209;font-weight: 500;"
+								id="hod-mail">hod_bsh@srivasaviengg.ac.in</a> </p>
+						<a href="http://srivasaviengg.ac.in/faculty_profile/CSE_Dr%20D.Jaya%20Kumari-Web%20Profile.pdf"
+							target="_blank" class="btn btn-danger">
+							See Profile
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---------------------------------------------------TAB 21 ENDS-------------->
+	</div>
+
+	<!-- -----------------------MIDDLE OPTINONS Content STARTS (MISSION ,VISION ETC)------------------------------- -->
+
+	<!-- Content -->
+	<div class="content m-0">
+
+		<!-- open sidebar menu -->
+		<a class="btn btn-primary btn-customized open-menu " href="#" role="button">
+			<i class="fas fa-align-left" style="display: flex;align-items: center;justify-content: center;"></i>
+		</a>
+
+
+		<div id="content" class="container-fluid container my-5">
+			<h2 class="mb-4 mt-0 mt-sm-5 text-center pt-2">Basic Science and Humanities Department</h2>
+			<div class="tab-content border-3 p-0 p-sm-4" id="nav-tabContent">
+				<div class="tab-pane fade show active p-3" id="nav-department" role="tabpanel"
+					aria-labelledby="nav-department-tab">
+					<div class="row">
+						<div class="col-md-8" style="display: flex; justify-content: center; align-items: center;">
+							<img class="img-fluid dept-hod" src="../../images/departments/bsh/bshhod.jpg" />
+						</div>
+
+
+						<div class="col-md-4 text-center" id="hod" class="my-3 my-md-0">
+							<h2 id="dept-head" class="mt-4 mt-md-auto">Sri N. Raja Sekhar</h2>
+							<p>Head of the Department</p>
+							<p>Phone No: 08818-284355 (O)-(Ext.-317)</p>
+							<p>Fax No: 08818-284322</p>
+							<p>Email: <a href="mailto:hod_bsh@srivasaviengg.ac.in"
+									id="pdfDOWNLOADER11">hod_bsh@srivasaviengg.ac.in</a>
+							</p>
+						</div>
+					</div>
+					<div class="profile-card">
+						<h3>Department Profile</h3>
+						<p style="font-size: 18px;">The Department of Basic Science and Humanities started at the inception of the
+							college.The Department is
+							fundamental to
+							Engineering and devoted to fostering the basic principles and understanding of science to enhance the
+							students’ basic
+							knowledge of Engineering. Its objective is to provide value-based education for budding Scientists and
+							Engineers. The
+							Department offers various courses of study namely Mathematics, Physics ,Chemistry, Environmental Studies,
+							and English.
+
+							The students benefit greatly from the knowledge and wisdom of Doctors & highly qualified faculty of the
+							department.
+							Faculty make consistent endeavours and strenuous efforts to improve the students' learning and develop
+							their
+							personality.The Department also designs innovative programs which help the students to acquire English
+							Communication
+							Skills and make them industry ready.
+
+							The Department possesses state-of-the-art laboratories(Sir CV Raman Engineering Physics Lab, Acharya
+							P.C.Ray Engineering
+							Chemistry Lab, and Rabindranath Tagore English Communication Skills Lab) which nurture students’ practical
+							knowledge
+							through the basic concepts of the courses. Besides this, the department also conducts various scientific
+							and cultural
+							activities like Quizzes, Poster Presentations, Power Point Presentations, Short Films and Skits on
+							National Mathematics
+							Day i.e., on 22nd December, every year to instil students' creativity.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Footer -->
+
+
+
+	</div>
+	<!-- End content -->
+
+	</div>
+	<!-- End wrapper -->
+	<div id="footer">
+	</div>
+	<!-- Javascript -->
+	<script>
+		// J to handle tab/accordion behavior
+		document.addEventListener("DOMContentLoaded", function () {
+			// Get all tab links and accordion buttons
+			const tabLinks = document.querySelectorAll(".nav-link");
+			const accordionCards = document.querySelectorAll(".accordion .card");
+
+			// Add click event listeners to tab links
+			tabLinks.forEach(function (link) {
+				link.addEventListener("click", function () {
+					// Hide all tab content
+					document.querySelectorAll(".tab-pane").forEach(function (pane) {
+						pane.classList.remove("show", "active");
+					});
+
+					// Show the selected tab content
+					const targetId = link.getAttribute("data-bs-target").replace("#", "");
+					document.getElementById(targetId).classList.add("show", "active");
+				});
+			});
+
+			// Add click event listeners to accordion cards
+			accordionCards.forEach(function (card) {
+				card.addEventListener("click", function () {
+					// Hide all accordion content
+					document.querySelectorAll(".accordion-content .card .collapse").forEach(function (collapse) {
+						collapse.classList.remove("show");
+					});
+
+					// Show the selected accordion content
+					const targetId = card.getAttribute("data-bs-target").replace("#", "");
+					document.getElementById(targetId).classList.add("show");
+				});
+			});
+		});
+
+	</script>
+
+
+	<!--  -->
+
+	<script>
+		function show(id) {
+			const contentContainer = document.querySelector("#content");
+			const selectedTab = document.querySelector(id);
+
+			if (selectedTab) {
+				// Replace the content of #content with the selected tab's content
+				contentContainer.innerHTML = selectedTab.innerHTML;
+			}
+			document.querySelector(".sidebar").classList.remove("active");
+			removeActiveFromAnchors();
+			// Remove the overlay
+			document.querySelector(".overlay").classList.remove("active");
+		}
+
+		const dismissButton = document.querySelector(".dismiss");
+		const contentContainer = document.querySelector("#content");
+
+		dismissButton.addEventListener("click", function () {
+			// Hide the sidebar and reset active states
+			document.querySelector(".sidebar").classList.remove("active");
+			removeActiveFromAnchors();
+
+			// Restore the original content in the content container
+
+		});
+
+		const originalContentHTML = contentContainer.innerHTML;
+
+		function removeActiveFromAnchors() {
+			const anchors = document.querySelectorAll(".list-unstyled.components li a");
+			anchors.forEach((anchor) => {
+				anchor.classList.remove("active");
+			});
+
+		}
+
+		function removeActiveFromLis() {
+			const anchors = document.querySelectorAll(".list-unstyled.components li");
+			anchors.forEach((anchor) => {
+				anchor.classList.remove("active");
+			});
+
+		}
+
+		// Add click event listeners to navlinks
+		const navlinks = document.querySelectorAll(".list-unstyled.components li a");
+		navlinks.forEach((link) => {
+			link.addEventListener("click", function (e) {
+				e.preventDefault();
+				removeActiveFromAnchors();
+				this.classList.add("active");
+				show(this.getAttribute("href"));
+			});
+		});
+		const navlink = document.querySelectorAll(".list-unstyled.components li ");
+		navlink.forEach((link) => {
+			link.addEventListener("click", function (e) {
+				e.preventDefault();
+				removeActiveFromLis();
+				this.classList.add("active");
+				show(this.getAttribute("href"));
+			});
+		});
+	</script>
+
+	<!--  -->
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+		<script src="../../js/departments/jquery-3.3.1.min.js"></script>
+		<script src="../../js/departments/jquery-migrate-3.0.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+		<script src="../../js/departments/jquery.backstretch.min.js"></script>
+		<script src="../../js/departments/wow.min.js"></script>
+		<script src="../../js/departments/jquery.waypoints.min.js"></script>
+		<script src="../../js/departments/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="../../js/departments/scripts.js"></script>
+</body>
+
+</html>

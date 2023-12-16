@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="../css/placements/Style.css" rel="stylesheet" />
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-tag-cloud.min.js"></script>
+    <title>Sri Vasavi Engineering College | Placements</title>
+
+    <!-- Header and Footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("./header.html");
+        $("#footer").load("./footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div style="margin-top: 150px">
+      <h1 class="top">Placements</h1>
+      <p class="glow">Discover Your Career Destiny</p>
+      <div class="intro">
+        <p>
+          At our college, we don't just prepare students for careers; we ignite
+          their passions and propel them towards success. Our placement program
+          is more than a bridge to the professional world; it's a launchpad for
+          dreams and aspirations. With a commitment to excellence and a
+          relentless pursuit of innovation, we connect our students with
+          opportunities that match their skills and ambitions. Our alumni have
+          soared to great heights, achieving remarkable feats in diverse
+          industries. Join us, and let your journey be guided by knowledge,
+          mentorship, and the promise of a brighter future. Your success story
+          begins here, at our college
+        </p>
+
+        <div id="video-container">
+          <video width="400" autoplay controls>
+            <source src="../images/placements/vid.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+        </div>
+      </div>
+      <div
+        class="container"
+        style="max-width: 100vw; margin: 0px; padding: 0px"
+      >
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../images/placements/image1.jpg" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../images/placements/image2.jpg" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../images/placements/image3.jpg" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <div class="tranding-slide-content-bottom">
+                  <h3 class="food-rating"></h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../images/placements/pic4.jpg" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../images/placements/pic5.jpg" alt="Tranding" />
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="../images/placements/pic6.jpg" alt="Tranding" />
+              </div>
+            </div>
+          </div>
+          <!-- Slide-end -->
+        </div>
+
+        <div class="tranding-slider-control">
+          <div class="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div class="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="statistics">
+        <h2 style="margin-left: 10px; margin-bottom: 30px">
+          Placement Statistics
+        </h2>
+        <div class="container1">
+          <div class="chart1">
+            <canvas id="myChart1" width="300" height="300"></canvas>
+          </div>
+          <div class="chart1">
+            <canvas id="myChart2" width="300" height="300"></canvas>
+          </div>
+          <div class="chart1">
+            <canvas id="myChart3" width="300" height="300"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="wordcloud-container">
+        <h2>Companies Hired...</h2>
+        <div id="wordcloud"></div>
+      </div>
+
+      <div class="team">
+        <details class="details-example">
+          <summary>Our Team</summary>
+
+          <div class="message">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+              quo ipsa dicta illo debitis minus mollitia dolor animi explicabo
+              incidunt iusto adipisci illum ad, corporis quas, aspernatur
+              quibusdam in? Natus.
+            </p>
+          </div>
+          <div class="team-members">
+            <div class="team-mate">
+              <img
+                src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png"
+                alt=""
+              />
+              <p>
+                Name <br />
+                Designation
+              </p>
+            </div>
+            <div class="team-mate">
+              <img
+                src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png"
+                alt=""
+              />
+              <p>
+                Name <br />
+                Designation
+              </p>
+            </div>
+            <div class="team-mate">
+              <img
+                src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png"
+                alt=""
+              />
+              <p>
+                Name <br />
+                Designation
+              </p>
+            </div>
+            <div class="team-mate">
+              <img
+                src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png"
+                alt=""
+              />
+              <p>
+                Name <br />
+                Designation
+              </p>
+            </div>
+            <div class="team-mate">
+              <img
+                src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png"
+                alt=""
+              />
+              <p>
+                Name <br />
+                Designation
+              </p>
+            </div>
+            <div class="team-mate">
+              <img
+                src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-File.png"
+                alt=""
+              />
+              <p>
+                Name <br />
+                Designation
+              </p>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <div class="companies">
+        <details class="details-example">
+          <summary>Companies Visited</summary>
+
+          <div class="company-icons">
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+            <img
+              src="https://cdn.worldvectorlogo.com/logos/hexaware-technologies-1.svg"
+              alt=""
+              class="company-icon"
+            />
+          </div>
+        </details>
+      </div>
+
+      <div class="p2023-2024">
+        <details class="details-example">
+          <summary>2023-2024</summary>
+          <table>
+            <tr>
+              <th>SNO</th>
+              <th>Student Name</th>
+              <th>Serial Number</th>
+              <th>Branch</th>
+              <th>Year Of Passing</th>
+              <th>On/Off campus</th>
+              <th>Name of company</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+          </table>
+        </details>
+      </div>
+      <div class="p2022-2023">
+        <details class="details-example">
+          <summary>2022-2023</summary>
+
+          <table>
+            <tr>
+              <th>SNO</th>
+              <th>Student Name</th>
+              <th>Serial Number</th>
+              <th>Branch</th>
+              <th>Year Of Passing</th>
+              <th>On/Off campus</th>
+              <th>Name of company</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Sri Satya</td>
+              <td>21A81A05C3</td>
+              <td>CSE</td>
+              <td>2025</td>
+              <td>Virtual</td>
+              <td>Amazon</td>
+            </tr>
+          </table>
+        </details>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script>
+      const detailsElement = document.querySelector(".details-example");
+
+      detailsElement.addEventListener("toggle", (event) => {
+        if (event.target.open) {
+          console.log("open");
+        } else {
+          console.log("closed");
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/placements/Pie1.js"></script>
+    <script src="../js/placements/Pie2.js"></script>
+    <script src="../js/placements/Pie3.js"></script>
+    <script src="../js/placements/wordcloud.js"></script>
+    <script src="../js/placements/resize.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+      var TrandingSlider = new Swiper(".tranding-slider", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2000, // Set the delay in milliseconds (3 seconds)
+        },
+      });
+    </script>
+  </body>
+</html>

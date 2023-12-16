@@ -1,0 +1,298 @@
+.image-container {
+    position: relative;
+    overflow: hidden;
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+    }
+}
+
+.content-container {
+    background-color: #b1040e;
+    padding: 40px;
+    padding-left: 100px;
+    position: relative;
+    height: 500px;
+    text-align: justify;
+    margin-left: -100px;
+    margin-top: -40px;
+    z-index: -1;
+}
+
+.contents-container {
+    background-color: #b1040e;
+    padding: 40px;
+    padding-right: 100px;
+    position: relative;
+    height: 500px;
+    text-align: justify;
+    margin-right: -100px;
+    margin-top: -40px;
+    z-index: -1;
+}
+
+@keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+.card-slide-animation {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.card-slide-right-animation {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+@media (max-width: 768px), (min-width: 769px) and (max-width: 1000px), (max-width: 320px) {
+    .image-container {
+        width: 100%;
+    }
+
+    .content-container,
+    .contents-container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+        text-align: left;
+    }
+    .contents-container {
+        margin-bottom: -40px;
+    }
+
+    .container {
+        margin-top: 80px;
+    }
+
+    .container-fluid img {
+        max-width: 100%;
+    }
+
+    .text-center.container {
+        margin-top: 30px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .Startclub {
+        margin-top: 30px;
+    }
+
+    .cubp {
+        margin: 10px;
+    }
+}
+
+
+.campclubs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.campclubs .colu, .card {
+    margin: 10px 0;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+    }
+}
+
+.content-container {
+    background-color: #b1040e;
+    padding: 40px;
+    padding-left: 100px;
+    position: relative;
+    height: 500px;
+    text-align: justify;
+    margin-left: -100px;
+    margin-top: -40px;
+    z-index: -1;
+}
+
+.contents-container {
+    background-color: #b1040e;
+    padding: 40px;
+    padding-right: 100px;
+    position: relative;
+    height: 500px;
+    text-align: justify;
+    margin-right: -100px;
+    margin-top: -40px;
+    z-index: -1;
+}
+
+@keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+.card-slide-animation {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.card-slide-right-animation {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+@media (max-width: 768px), (min-width: 769px) and (max-width: 1000px), (max-width: 320px) {
+    .image-container {
+        width: 100%;
+    }
+
+    .content-container,
+    .contents-container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+        text-align: left;
+    }
+    .contents-container {
+        margin-bottom: -40px;
+    }
+
+    .container {
+        margin-top: 80px;
+    }
+
+    .container-fluid img {
+        max-width: 100%;
+    }
+
+    .text-center.container {
+        margin-top: 30px;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .Startclub {
+        margin-top: 30px;
+    }
+
+    .cubp {
+        margin: 10px;
+    }
+}
+
+
+.campclubs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.campclubs .colu, .card {
+    margin: 10px 0;
+}

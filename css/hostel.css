@@ -1,0 +1,181 @@
+.facilities {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .facilities-images {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .facilities-image {
+    width: 25vw;
+  }
+  .facilities-image img {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .services {
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .service-cards {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .service-card {
+    width: 20vw;
+    min-height: 20vw;
+    padding: 20px;
+    margin: 10px;
+  }
+  .facilities-image:hover {
+    transform: scale(1.2);
+    transition: 1.5s ease-out;
+  }
+  .upper-border {
+    border-top: 1px solid black;
+  }
+
+  .counters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  .count-increase {
+    font-size: 60px;
+    font-family: "Oswald", sans-serif;
+    color: #b1040e;
+  }
+
+  hr {
+    width: 90%;
+    border: 1px solid black;
+  }
+
+  .contacts {
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .contact-cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .contact-card {
+    width: 35vw;
+    padding: 30px;
+    align-items: center;
+    gap: 15px;
+  }
+  .contact-card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .mobile-number-handler {
+    text-decoration: none;
+    color: black !important;
+  }
+  .gallery {
+    max-width: 80vw;
+    background-color: #7f7b82;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .row1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+  .row1-col1 {
+    width: 40%;
+  }
+  .row1-col2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .row1-col2-inner {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+  }
+  .row2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row3 {
+    width: 100%;
+    display: flex;
+    gap: 2px;
+  }
+  .row3-col1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .row3-col2 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row3-col3 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .row1 img,
+  .row1-col1 img,
+  .row1-col2 img,
+  .row1-col2-inner img,
+  .row2 img,
+  .row3-col1 img,
+  .row3-col2 img,
+  .row3-col3 img {
+    height: 100%;
+    width: 100%;
+  }
+  @media screen and (max-width: 500px) {
+    .facilities-image img {
+      height: 50px;
+      width: 50px;
+    }
+    .service-card {
+      width: 80vw;
+    }
+    .contact-cards {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .contact-card {
+      width: 80vw;
+    }
+  }

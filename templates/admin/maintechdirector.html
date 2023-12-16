@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical director</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b2b9ab5ba1.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body{
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .header_main {
+        background-color: rgb(236, 234, 234);
+        font-family: "Times New Roman", Times, serif;
+        color: #1d1c1c;
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+      }
+      .icon-text-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .icon {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+      .quotation-first {
+        color: rgb(235, 18, 18);
+        font-size: 3rem;
+        opacity: 0.5;
+        padding-bottom: 2ch;
+      }
+      .quotation-last {
+        color: rgb(235, 18, 18);
+        font-size: 3rem;
+        opacity: 0.5;
+        rotate: 180deg;
+
+        padding-bottom: 5%;
+      }
+      .animated-text {
+        font-size: 40px;
+        font-weight: 600;
+        min-width: 280px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .animated-text span {
+        position: relative;
+      }
+
+      .animated-text span::before {
+        content: "";
+        color: #b1040e;
+        animation: words 20s infinite;
+      }
+
+      .animated-text span::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        width: calc(100% + 8px);
+        height: 100%;
+        border-left: 2px solid #b1040e;
+        right: -8px;
+        animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+      }
+
+      @keyframes cursor {
+        to {
+          border-left: 2px solid;
+        }
+      }
+
+      @keyframes words {
+        0%,
+        20% {
+          content: "Missions";
+        }
+        21%,
+        40% {
+          content: "Agendas";
+        }
+        41%,
+        60% {
+          content: "Objectives";
+        }
+        61%,
+        80% {
+          content: "Targets";
+        }
+        81%,
+        100% {
+          content: "Ambitions";
+        }
+      }
+
+      @keyframes typing {
+        10%,
+        15%,
+        30%,
+        35%,
+        50%,
+        55%,
+        70%,
+        75%,
+        90%,
+        95% {
+          width: 0;
+        }
+
+        5%,
+        20%,
+        25%,
+        40%,
+        45%,
+        60%,
+        65%,
+        80%,
+        85% {
+          width: calc(100% + 8px);
+        }
+      }
+      .name-bg {
+        background-color: #b1040e;
+        align-items: center;
+        font-size: 24px;
+        color: whitesmoke;
+        padding-top: 4px;
+      }
+      .main {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .section {
+        width: 100%;
+        background-color: white;
+      }
+      .main-tech-container {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 100px;
+      }
+      .content-section {
+        float: right;
+        width: 55%;
+      }
+      .image-section {
+        float: left;
+        width: 40%;
+      }
+      .image-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .content-section .title {
+        text-transform: uppercase;
+        font-size: 28px;
+      }
+      .content-section .content h3 {
+        margin-top: 20px;
+        color: #5d5d5d;
+        font-size: 21px;
+      }
+      .content-section .content p {
+        margin-top: 10px;
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .content-section .social {
+        /*margin:40px 40px*/
+        float: left;
+      }
+      .content-section .social i {
+        color: #1d1c1c;
+        font-size: 30px;
+        padding: 0px 10 px;
+        margin-left: 15px;
+      }
+      .content-section .social i:hover {
+        color: #c90d0d;
+      }
+
+
+      @media screen and (max-width: 925px) {
+        .quotation-first {
+          align-self: flex-start;
+        }
+        .quotation-last {
+          align-self: flex-end;
+        }
+        #body_container{
+          margin-top: 70px !important;
+        }
+      }
+      
+
+      @media screen and (max-width: 768px) {
+        .header_main{
+          margin-top: 5px;
+          padding: 10px;
+        }
+        #body_container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .header_main {
+          padding-top: 20px; /* Adjust padding-top for smaller screens */
+        }
+
+        .icon-text-container {
+          flex-direction: column; /* Stack elements vertically */
+          padding-left: 0; /* Remove left padding */
+        }
+
+        .quotation-first,
+        .quotation-last {
+          font-size: 2rem; /* Reduce font size for quotations */
+          padding-bottom: 1ch; /* Adjust padding for quotations */
+          padding-left: 0; /* Remove left padding */
+        }
+        .main-tech-container {
+          width: 80%;
+          display: flex;
+          margin: auto;
+          padding-top: 50px;
+          flex-direction: column-reverse;
+        }
+        .content-section {
+          float: none;
+          width: 100%;
+          display: block;
+          margin: auto;
+        }
+        .image-section {
+          float: none;
+          width: 100%;
+          display: block;
+          margin: auto;
+        }
+        .image-section img {
+          width: 100%;
+          height: auto;
+          display: block;
+          margin: auto;
+        }
+        .content-section .title {
+          text-align: center;
+          font-size: 19px;
+        }
+        .content-section .social {
+          text-align: center;
+        }
+      }
+      @media screen and (min-width:768px){
+        #body_container{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 150px;
+        }
+      }
+      .leastele {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        background-color: white;
+        padding-top: 3ch;
+      }
+      #body_container ul {
+        padding-left: 15%;
+        font-size: 20px;
+      }
+      .w3rcontainer {
+        border: 1px solid #cccfdb;
+        border-radius: 2px;
+      }
+      .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: #0087ca;
+      }
+
+      .hover-underline-animation:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #b1040e;
+        transform-origin: bottom left;
+        transition: transform 1.5s ease-out;
+      }
+
+      .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+      .hover-underline-active:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .social-icons {
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-around;
+
+        align-items: center;
+      }
+
+      .list-unstyled.social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0;
+        display: flex;
+      }
+
+      .list-unstyled.social-icons li {
+        margin: 0 10px;
+        height: 20px;
+      }
+
+      .quicklinks li {
+        margin: 5px;
+        opacity: 0.7;
+        transition: all 0.2ms;
+      }
+
+      .quicklinks li:hover {
+        opacity: 1;
+        font-weight: 500;
+      }
+
+      .phone {
+        color: #ff5a2c;
+        font-family: Poppins Helvetica, sans-serif;
+        /* font-size: 15px; */
+        display: block;
+        margin-top: 4px;
+      }
+
+      .address {
+        font-size: 16px;
+        padding-left: 7px;
+      }
+
+      .logo {
+        height: 80px;
+        width: fit-content;
+      }
+
+      /* Facebook */
+      .social-icons .facebook:hover i {
+        color: #1877f2;
+        /* Facebook blue */
+      }
+
+      /* Twitter */
+      .social-icons .twitter:hover i {
+        color: #1da1f2;
+        /* Twitter blue */
+      }
+
+      /* Instagram */
+      .social-icons .instagram:hover i {
+        color: #e4405f;
+        /* Instagram pink */
+      }
+
+      /* Replace with your Instagram logo image */
+
+      /* LinkedIn */
+      .social-icons .linkedin:hover i {
+        color: #0077b5;
+        /* LinkedIn blue */
+      }
+
+      /* YouTube */
+      .social-icons .youtube:hover i {
+        color: #ff0000;
+        /* YouTube red */
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("./header.html");
+        $("#footer").load("./footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="body_container">
+      <div class="header_main">
+        <h1
+          style="font-size: 40px; color: #c5121b"
+          class="hover-underline-animation"
+        >
+          Our Technical director
+        </h1>
+        <div class="icon-text-container" align="center">
+          <div class="quotation-first">
+            <i align="center" class="bi bi-quote"></i>
+          </div>
+          <h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            vehicula augue vel diam dignissim, vel posuere mi fringilla.
+          </h4>
+          <div class="quotation-last">
+            <i align="center" class="bi bi-quote"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="section">
+          <div class="main-tech-container">
+            <div class="content-section">
+              <div class="title">
+                <h1 class="hover-underline-animation">Profile</h1>
+              </div>
+              <div class="content">
+                <h3>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi ipsam delectus hic.
+                </h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi quia, a atque hic deleniti sunt provident quae
+                  similique cupiditate doloribus at suscipit beatae magni
+                  nesciunt voluptate aspernatur, repellat quod nihil! Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                  facere voluptatem esse officiis dignissimos nihil iste,fuga
+                 
+                </p>
+
+                <p></p>
+              </div>
+
+              <div class="social">
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+                <a href=""><i class="bi bi-telephone-fill"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+              </div>
+            </div>
+            <br />
+            <br />
+            <div class="image-section">
+              <img src="../../images/admin/tech_director.jpg" />
+              <br /><br />
+              <h3 class="name-bg" align="center">Sri Checka Apparao</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="footer"></div>
+    <script>
+      // Get all elements with the class "hover-underline-animation"
+      const elements = document.querySelectorAll(".hover-underline-animation");
+
+      // Function to check if an element is in the viewport
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      // Function to handle the scroll event
+      function handleScroll() {
+        elements.forEach((element) => {
+          if (isInViewport(element)) {
+            element.classList.add("hover-underline-active");
+          } else {
+            element.classList.remove("hover-underline-active");
+          }
+        });
+      }
+
+      // Add scroll event listener to the window
+      window.addEventListener("scroll", handleScroll);
+
+      // Initial check for elements in the viewport
+      handleScroll();
+    </script>
+  </body>
+</html>
